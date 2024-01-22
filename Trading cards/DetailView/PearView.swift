@@ -29,6 +29,7 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .padding(40)
                     
+                    
                     Image("Apple")
                         .resizable()
                         .scaledToFit()
