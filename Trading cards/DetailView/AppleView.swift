@@ -169,19 +169,47 @@ struct AppleView: View {
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                                 .font(.title2)
+                            
+                            
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                                 .font(.title2)
+                            
+                            
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                                 .font(.title2)
+                            
+                            
                             Image(systemName: "star.fill")
                                 .foregroundColor(.white)
                                 .font(.title2)
+                            
+                            
                             Image(systemName: "star.leadinghalf.filled")
                                 .foregroundColor(.white)
                                 .font(.title2)
                            
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            //card value
+                            Text("Card value:")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 16,
+                                        leading: 16,
+                                        bottom: 16,
+                                        trailing: 16
+                                    )
+                                )
+                            Text("RARE")
+                                .foregroundStyle(.white)
+                                .font(.largeTitle)
+                            
                             Spacer()
                         }
                     }
