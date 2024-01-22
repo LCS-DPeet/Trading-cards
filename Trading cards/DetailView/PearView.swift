@@ -29,7 +29,7 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .padding(40)
                     
-                    Image("Pear")
+                    Image("Apple")
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(30)
@@ -54,6 +54,11 @@ struct ContentView: View {
                         Text("Green")
                             .foregroundStyle(.white)
                             .font(.title3)
+                    }
+                    VStack {
+                        Text("Best Ate When:")
+                            .foregroundStyle(.white)
+                            .font(.title)
                     }
                   
                 }

@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C1E785782B59AE220081D085 /* Trading_cardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E785772B59AE220081D085 /* Trading_cardsApp.swift */; };
-		C1E7857A2B59AE220081D085 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E785792B59AE220081D085 /* ContentView.swift */; };
+		C1E7857A2B59AE220081D085 /* PearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E785792B59AE220081D085 /* PearView.swift */; };
 		C1E7857C2B59AE240081D085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E7857B2B59AE240081D085 /* Assets.xcassets */; };
 		C1E7857F2B59AE240081D085 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E7857E2B59AE240081D085 /* Preview Assets.xcassets */; };
+		C1E785892B5DE1180081D085 /* AppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E785882B5DE1180081D085 /* AppleView.swift */; };
+		C1E7858B2B5DE1D10081D085 /* BananaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E7858A2B5DE1D00081D085 /* BananaView.swift */; };
+		C1E7858D2B5DE2890081D085 /* GrapeFruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E7858C2B5DE2890081D085 /* GrapeFruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1E785742B59AE220081D085 /* Trading cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trading cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E785772B59AE220081D085 /* Trading_cardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trading_cardsApp.swift; sourceTree = "<group>"; };
-		C1E785792B59AE220081D085 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1E785792B59AE220081D085 /* PearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PearView.swift; sourceTree = "<group>"; };
 		C1E7857B2B59AE240081D085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E7857E2B59AE240081D085 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1E785882B5DE1180081D085 /* AppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleView.swift; sourceTree = "<group>"; };
+		C1E7858A2B5DE1D00081D085 /* BananaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaView.swift; sourceTree = "<group>"; };
+		C1E7858C2B5DE2890081D085 /* GrapeFruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeFruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,20 @@
 		C1E785862B59B1EC0081D085 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
-				C1E785792B59AE220081D085 /* ContentView.swift */,
+				C1E785792B59AE220081D085 /* PearView.swift */,
+				C1E7858A2B5DE1D00081D085 /* BananaView.swift */,
+				C1E7858C2B5DE2890081D085 /* GrapeFruit.swift */,
+				C1E785882B5DE1180081D085 /* AppleView.swift */,
+				C1E785872B5DE0F10081D085 /* New Group */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		C1E785872B5DE0F10081D085 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E7857A2B59AE220081D085 /* ContentView.swift in Sources */,
+				C1E7857A2B59AE220081D085 /* PearView.swift in Sources */,
+				C1E785892B5DE1180081D085 /* AppleView.swift in Sources */,
 				C1E785782B59AE220081D085 /* Trading_cardsApp.swift in Sources */,
+				C1E7858B2B5DE1D10081D085 /* BananaView.swift in Sources */,
+				C1E7858D2B5DE2890081D085 /* GrapeFruit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
