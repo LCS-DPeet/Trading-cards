@@ -35,7 +35,7 @@ struct AppleView: View {
                         .cornerRadius(30)
                         .padding(60)
                        
-                        
+                       
                 }
                 ZStack {
                     Rectangle()
@@ -137,7 +137,7 @@ struct AppleView: View {
                                         trailing: 16
                                     )
                                 )
-                            Text("Sweat or Sour")
+                            Text("Sweet or Sour")
                                 .foregroundStyle(.white)
                                 .font(.title2)
                                 .padding(
