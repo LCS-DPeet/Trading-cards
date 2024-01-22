@@ -35,7 +35,6 @@ struct ContentView: View {
                         .scaledToFit()
                         .cornerRadius(30)
                         .padding(60)
-                        .colorInvert()
                        
                         
                 }

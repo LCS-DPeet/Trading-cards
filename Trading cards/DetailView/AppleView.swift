@@ -38,35 +38,92 @@ struct AppleView: View {
                         
                 }
                 ZStack {
+                    Rectangle()
+                        .foregroundColor(.lightBlue)
+                        .padding(-10)
+                    
+                    Rectangle()
+                        .foregroundColor(.darkBlue)
+                        .cornerRadius(30)
+                        .padding(10)
                     VStack {
                         // Hstack Around food stats
                         HStack {
-                            Text("Food Stats")
+                            Text("Food Stats:")
                                 .foregroundStyle(.white)
                                 .font(.largeTitle)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 18,
+                                        leading: 16,
+                                        bottom: 0,
+                                        trailing: 16
+                                    )
+                                )
+                            Spacer()
+                             
                         }
                         
-                        // colour stat
-                        Text("Colour:")
-                            .foregroundStyle(.white)
-                            .font(.title)
-                       
+                        HStack {
+                            // colour stat
+                            Text("Colour:")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 16,
+                                        bottom: 16,
+                                        trailing: 16
+                                    )
+                                )
+                            
+                            //colour anwser
+                            Text("Green")
+                                .foregroundStyle(.white)
+                                .font(.title2)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 2,
+                                        leading: 16,
+                                        bottom: 16,
+                                        trailing: 16
+                                    )
+                                )
+                                Spacer()
+                        }
                         
-                        // colour anwser
-                        Text("Green")
-                            .foregroundStyle(.white)
-                            .font(.title3)
-                        
-                        // best ate when
-                        Text("Best Ate When:")
-                            .foregroundStyle(.white)
-                            .font(.title)
-                        
-                        // Best ate when anwser
-                        Text("Ripe")
-                            .foregroundStyle(.white)
-                            .font(.title3)
-                        
+                        // hstack around the best ate when
+                        HStack {
+                            // best ate when
+                            Text("Best Ate When:")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 16,
+                                        bottom: 16,
+                                        trailing: 16
+                                    )
+                                )
+                            
+                            // Best ate when anwser
+                            Text("Ripe")
+                                .foregroundStyle(.white)
+                                .font(.title3)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 2,
+                                        leading: 16,
+                                        bottom: 16,
+                                        trailing: 16
+                                    )
+                                )
+                                
+                            
+                            Spacer()
+                        }
                         Spacer()
                     }
                 }
