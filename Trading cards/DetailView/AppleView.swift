@@ -61,7 +61,7 @@ struct AppleView: View {
                                     )
                                 )
                             Spacer()
-                             
+                            
                         }
                         
                         HStack {
@@ -73,24 +73,24 @@ struct AppleView: View {
                                     EdgeInsets(
                                         top: 0,
                                         leading: 16,
-                                        bottom: 16,
+                                        bottom: 0,
                                         trailing: 16
                                     )
                                 )
                             
                             //colour anwser
-                            Text("Green")
+                            Text("Green, red , or yellow")
                                 .foregroundStyle(.white)
                                 .font(.title2)
                                 .padding(
                                     EdgeInsets(
                                         top: 2,
-                                        leading: 16,
-                                        bottom: 16,
+                                        leading: 0,
+                                        bottom: 0,
                                         trailing: 16
                                     )
                                 )
-                                Spacer()
+                            Spacer()
                         }
                         
                         // hstack around the best ate when
@@ -103,31 +103,91 @@ struct AppleView: View {
                                     EdgeInsets(
                                         top: 0,
                                         leading: 16,
-                                        bottom: 16,
+                                        bottom: 0,
                                         trailing: 16
                                     )
                                 )
                             
                             // Best ate when anwser
-                            Text("Ripe")
+                            Text("Ripe and fresh")
                                 .foregroundStyle(.white)
                                 .font(.title3)
                                 .padding(
                                     EdgeInsets(
-                                        top: 2,
-                                        leading: 16,
-                                        bottom: 16,
+                                        top: 0,
+                                        leading: 0,
+                                        bottom: 0,
                                         trailing: 16
                                     )
                                 )
-                                
-                            
                             Spacer()
                         }
-                        Spacer()
+                        
+                        
+                        //taste
+                        HStack {
+                            Text("Taste:")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 16,
+                                        bottom: 0,
+                                        trailing: 16
+                                    )
+                                )
+                            Text("Sweat or Sour")
+                                .foregroundStyle(.white)
+                                .font(.title2)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 16,
+                                        bottom: 0,
+                                        trailing: 16
+                                    )
+                                )
+                            Spacer()
+                        }
+                        
+                        // Why I Like This Food
+                        HStack {
+                            Text("Food Rating:")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .padding(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 16,
+                                        bottom: 0,
+                                        trailing: 16
+                                    )
+                                )
+                            
+                            //Stars for raiting the food
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                            Image(systemName: "star.leadinghalf.filled")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                           
+                            Spacer()
+                        }
                     }
                 }
                 Spacer()
+            
                 
                // text
                 
