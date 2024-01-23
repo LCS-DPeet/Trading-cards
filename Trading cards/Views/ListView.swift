@@ -9,7 +9,25 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack() {
+            List() {
+                NavigationLink { FruitView(image: "Pear", foodColour: "Green and Yellow", bestAteWhen: "Ripe or Over Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "EPIC")
+                } label: {
+                    HStack {
+                        Text("aaaa")
+                        Spacer()
+                    }
+                }
+                NavigationLink { FruitView(image: "Apple", foodColour: "Green and Yellow", bestAteWhen: "Ripe or Over Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "EPIC")
+                } label: {
+                    HStack {
+                        Text("eeeeeple")
+                        Spacer()
+                    }
+                }
+            }
+            .navigationTitle(Text("Kak"))
+        }
     }
 }
 

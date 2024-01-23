@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PearView: View {
     var body: some View {
         ZStack {
             // rectangle background blue
@@ -104,7 +104,7 @@ struct ContentView: View {
                                         top: 0,
                                         leading: 16,
                                         bottom: 0,
-                                        trailing: 16
+                                        trailing: 0
                                     )
                                 )
                             
@@ -206,7 +206,7 @@ struct ContentView: View {
                                         trailing: 16
                                     )
                                 )
-                            Text("COMMON")
+                            Text("EPIC")
                                 .foregroundStyle(.white)
                                 .font(.largeTitle)
                             
@@ -227,5 +227,5 @@ struct ContentView: View {
     }
 }
 #Preview {
-    ContentView()
+    PearView()
 }
