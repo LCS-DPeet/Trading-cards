@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FruitView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     var image: String
     var foodColour: String
     var bestAteWhen: String
@@ -236,6 +238,17 @@ struct FruitView: View {
             }
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement:.navigationBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Label("Back", systemImage: "arrow.left.circle")
+                        .tint(.black)
+                }
+            }
+        }
     }
 }
 #Preview {
