@@ -8,9 +8,16 @@
 import Foundation
 
 struct Fruit {
-    let colour: String
-    let bestAteWhen: String
+    let image: String
+    let foodColour: String
+    let BestAteWhen: String
+    let cardValue: String
     let taste: String
+    let star1: String
+    let star2: String
+    let star3: String
+    let star4: String
+    let star5: String
     let cardValue: String
 }
 
