@@ -10,8 +10,7 @@ import Foundation
 struct Fruit {
     let image: String
     let foodColour: String
-    let BestAteWhen: String
-    let cardValue: String
+    let bestAteWhen: String
     let taste: String
     let star1: String
     let star2: String
@@ -22,29 +21,194 @@ struct Fruit {
 }
 
 let pear = Fruit(
-    colour: "Green and Yellow",
+    image: "Pear",
+    foodColour: "Green and Yellow",
     bestAteWhen: "Ripe or Extra Ripe",
     taste: "Soft and Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
     cardValue: "EPIC"
 )
 
 let banana = Fruit(
-    colour: "Yellow",
+    image: "Banana",
+    foodColour: "Yellow",
     bestAteWhen: "Ripe",
     taste: "Bland and Soft",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.leadinghalf.filled",
+    star5: "star",
     cardValue: "COMMON"
 )
 
 let grapeFruit = Fruit(
-    colour: "Red and Orange",
+    image: "GrapeFruit",
+    foodColour: "Red and Orange",
     bestAteWhen: "Ripe",
     taste: "Sweet and Bitter",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.fill",
     cardValue: "LEGENDARY"
 )
 
 let apple = Fruit(
-    colour: "Green, Red, or Yellow",
+    image: "Apple",
+    foodColour: "Green, Red, or Yellow",
     bestAteWhen: "Ripe and Fresh",
-    taste: "Sweat and Bitter",
+    taste: "Sweet or Sour",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
     cardValue: "RARE"
+)
+
+
+let grapes = Fruit(
+    image: "Grapes",
+    foodColour: "Green and Purple",
+    bestAteWhen: "Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
+    cardValue: "RARE"
+)
+let pinapple = Fruit(
+    image: "Pineapple",
+    foodColour: "Yellow",
+    bestAteWhen: "Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star",
+    star5: "star",
+    cardValue: "COMMON"
+)
+let cherries = Fruit(
+    image: "Cherries",
+    foodColour: "Red and Dark Red",
+    bestAteWhen: "Ripe",
+    taste: "Sweet and Bitter",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.leadinghalf.filled",
+    star5: "star",
+    cardValue: "EPIC"
+)
+let orange = Fruit(
+    image: "Orange",
+    foodColour: "Orange",
+    bestAteWhen: "Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.leadinghalf.filled",
+    star5: "star",
+    cardValue: "COMMON"
+)
+
+let strawberry = Fruit(
+image: "Strawberry",
+foodColour: "Red",
+bestAteWhen: "Ripe",
+taste: "Sweet",
+star1: "star.fill",
+star2: "star.fill",
+star3: "star.fill",
+star4: "star.fill",
+star5: "star.fill",
+cardValue: "LEGENDARY"
+)
+
+let blackberry = Fruit (
+    image: "Blackberry",
+    foodColour: "Dark Purple",
+    bestAteWhen: "Ripe",
+    taste: "Bitter and Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star",
+    cardValue: "EPIC"
+)
+
+let kiwi = Fruit (
+    image: "Kiwi",
+    foodColour: "Green and Brown",
+    bestAteWhen: "Ripe or Over Ripe",
+    taste: "Sour and Bitter",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.leadinghalf.filled",
+    star5: "star",
+    cardValue: "RARE"
+)
+
+let watermellon = Fruit (
+image : "Watermellon",
+foodColour: "Red and Green",
+bestAteWhen: "Ripe",
+taste: "Sweet",
+star1: "star.fill",
+star2: "star.fill",
+star3: "star.fill",
+star4: "star.fill",
+star5: "star.leadinghalf.filled",
+cardValue: "EPIC"
+)
+
+let peach = Fruit (
+    image: "Peach",
+    foodColour: "Pink and Yellow",
+    bestAteWhen: "Ripe or Over Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.fill",
+    cardValue: "LEGENDARY"
+    )
+
+let lemon = Fruit (
+    image: "Lemon",
+    foodColour: "Yellow",
+    bestAteWhen: "Ripe",
+    taste: "Bitter and Sour",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
+    cardValue: "COMMON"
+    )
+
+let pomagrante = Fruit (
+    image: "Lemon",
+    foodColour: "Yellow",
+    bestAteWhen: "Ripe",
+    taste: "Bitter and Sour",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
+    cardValue: "COMMON"
 )

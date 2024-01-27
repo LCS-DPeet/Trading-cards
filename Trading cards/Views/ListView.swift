@@ -15,7 +15,8 @@ struct ListView: View {
             List() {
                 
                 //Pear
-                NavigationLink { FruitView(image: "Pear", foodColour: "Green and Yellow", bestAteWhen: "Ripe or Extra Ripe", taste: "Soft and Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "EPIC")
+                NavigationLink {
+                    FruitView(fruitToShow: pear)
                 } label: {
                     HStack {
                         Text("Pear")
@@ -24,7 +25,8 @@ struct ListView: View {
                 }
                 
                 //Banana
-                NavigationLink { FruitView(image: "Banana", foodColour: "Yellow", bestAteWhen: "Ripe", taste: "Bland and Soft", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.leadinghalf.filled", star5: "star", cardValue: "COMMON")
+                NavigationLink { 
+                    FruitView(fruitToShow: banana)
                 } label: {
                     HStack {
                         Text("Banana")
@@ -33,93 +35,110 @@ struct ListView: View {
                 }
                 
                 // GrapeFruit
-                NavigationLink { FruitView(image: "GrapeFruit", foodColour: "Red and Orange", bestAteWhen: "Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "LEGENDARY")
+                NavigationLink { FruitView( fruitToShow: grapeFruit)
                 } label: {
                     HStack {
-                        Text("GreatFruit")
+                        Text("GrapeFruit")
                         Spacer()
                     }
                 }
                 
                 //Apple
-                NavigationLink { FruitView(image: "Apple", foodColour: "Green, Red, or Yellow", bestAteWhen: "Ripe and Fresh", taste: "Sweet or Sour", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "RARE")
+                NavigationLink { FruitView( fruitToShow: apple)
                 } label: {
                     HStack {
                         Text("Apple")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Grapes", foodColour: "Green and Purple", bestAteWhen: "Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "RARE")
+                //grapes
+                NavigationLink { FruitView( fruitToShow: grapes)
                 } label: {
                     HStack {
                         Text("Grapes")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Pineapple", foodColour: "Yellow", bestAteWhen: "Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star", star5: "star", cardValue: "COMMON")
+                //pinapple
+                NavigationLink { FruitView( fruitToShow: pinapple)
                 } label: {
                     HStack {
                         Text("Pinapple")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Cherries", foodColour: "Red and Dark Red", bestAteWhen: "Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.leadinghalf.filled", star5: "star", cardValue: "EPIC")
+                //cherries
+                NavigationLink { FruitView( fruitToShow: cherries)
+
                 } label: {
                     HStack {
                         Text("Cherries")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Orange", foodColour: "Orange", bestAteWhen: "Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.leadinghalf.filled", star5: "star", cardValue: "COMMON")
+                
+                //ornage
+                NavigationLink { FruitView( fruitToShow: orange)
                 } label: {
                     HStack {
                         Text("Orange")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Strawberry", foodColour: "Red", bestAteWhen: "Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "LEGENDARY")
+                //strawberry
+                NavigationLink { FruitView( fruitToShow: strawberry)
                 } label: {
                     HStack {
                         Text("Stawberry")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Blackberry", foodColour: "Dark Purple", bestAteWhen: "Ripe", taste: "Bitter and Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star", cardValue: "EPIC")
+                // blackberyy
+                NavigationLink { FruitView( fruitToShow: blackberry)
                 } label: {
                     HStack {
                         Text("Blackberry")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Kiwi", foodColour: "Green and Brown", bestAteWhen: "Ripe or Over Ripe", taste: "Sour and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.leadinghalf.filled", star5: "star", cardValue: "RARE")
+                //kiwi
+                NavigationLink { FruitView( fruitToShow: kiwi)
                 } label: {
                     HStack {
                         Text("Kiwi")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Watermellon", foodColour: "Red and Green", bestAteWhen: "Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "EPIC")
+                
+                //watermellon
+                NavigationLink { FruitView( fruitToShow: watermellon)
                 } label: {
                     HStack {
                         Text("Watermellon")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Peach", foodColour: "Pink and Yellow", bestAteWhen: "Ripe or Over Ripe", taste: "Sweet", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "LEGENDARY")
+                //peach
+                NavigationLink { FruitView( fruitToShow: peach)
                 } label: {
                     HStack {
                         Text("Peach")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Lemon", foodColour: "Yellow", bestAteWhen: "Ripe", taste: "Bitter and Sour", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.leadinghalf.filled", cardValue: "COMMON")
+                
+                //lemon
+                NavigationLink { FruitView( fruitToShow: lemon
+)
                 } label: {
                     HStack {
                         Text("Lemon")
                         Spacer()
                     }
                 }
-                NavigationLink { FruitView(image: "Pomegranate", foodColour: "Red and White", bestAteWhen: "Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "LEGONDARY")
+                
+                //pomagrante
+                NavigationLink { FruitView( fruitToShow: pomagrante)
                 } label: {
                     HStack {
                         Text("Pomegranate")

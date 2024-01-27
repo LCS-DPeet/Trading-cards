@@ -11,16 +11,7 @@ struct FruitView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    var image: String
-    var foodColour: String
-    var bestAteWhen: String
-    var taste: String
-    var star1: String
-    var star2: String
-    var star3: String
-    var star4: String
-    var star5: String
-    var cardValue: String
+    let fruitToShow: Fruit
     
     var body: some View {
         ZStack {
@@ -43,7 +34,7 @@ struct FruitView: View {
                         .cornerRadius(30)
                         .padding(40)
                     
-                    Image(image)
+                    Image(fruitToShow.image)
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(30)
@@ -93,7 +84,7 @@ struct FruitView: View {
                                 )
                             
                             //colour anwser
-                            Text(foodColour)
+                            Text(fruitToShow.foodColour)
                                 .foregroundStyle(.white)
                                 .font(.title2)
                                 .padding(
@@ -123,7 +114,7 @@ struct FruitView: View {
                                 )
                             
                             // Best ate when anwser
-                            Text(bestAteWhen)
+                            Text(fruitToShow.bestAteWhen)
                                 .foregroundStyle(.white)
                                 .font(.title3)
                                 .padding(
@@ -151,7 +142,7 @@ struct FruitView: View {
                                         trailing: 16
                                     )
                                 )
-                            Text(taste)
+                            Text(fruitToShow.taste)
                                 .foregroundStyle(.white)
                                 .font(.title2)
                                 .padding(
@@ -180,27 +171,27 @@ struct FruitView: View {
                                 )
                             
                             //Stars for raiting the food
-                            Image(systemName: star1)
+                            Image(systemName: fruitToShow.star1)
                                 .foregroundColor(.white)
                                 .font(.title2)
                             
                             
-                            Image(systemName: star2)
+                            Image(systemName: fruitToShow.star2)
                                 .foregroundColor(.white)
                                 .font(.title2)
                             
                             
-                            Image(systemName: star3)
+                            Image(systemName: fruitToShow.star3)
                                 .foregroundColor(.white)
                                 .font(.title2)
                             
                             
-                            Image(systemName: star4)
+                            Image(systemName: fruitToShow.star4)
                                 .foregroundColor(.white)
                                 .font(.title2)
                             
                             
-                            Image(systemName: star5)
+                            Image(systemName: fruitToShow.star5)
                                 .foregroundColor(.white)
                                 .font(.title2)
                            
@@ -220,7 +211,7 @@ struct FruitView: View {
                                         trailing: 16
                                     )
                                 )
-                            Text(cardValue)
+                            Text(fruitToShow.cardValue)
                                 .foregroundStyle(.white)
                                 .font(.largeTitle)
                             
@@ -252,5 +243,5 @@ struct FruitView: View {
     }
 }
 #Preview {
-    FruitView(image: "Pear", foodColour: "Green and Yellow", bestAteWhen: "Ripe or Over Ripe", taste: "Sweet and Bitter", star1: "star.fill", star2: "star.fill", star3: "star.fill", star4: "star.fill", star5: "star.fill", cardValue: "EPIC")
+    FruitView(fruitToShow: apple)
 }
