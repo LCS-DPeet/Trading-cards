@@ -20,6 +20,7 @@ struct Fruit {
     let cardValue: String
 }
 
+
 let pear = Fruit(
     image: "Pear",
     foodColour: "Green and Yellow",
@@ -201,8 +202,8 @@ let lemon = Fruit (
     )
 
 let pomagrante = Fruit (
-    image: "Lemon",
-    foodColour: "Yellow",
+    image: "Pomegranate",
+    foodColour: "Red and orange",
     bestAteWhen: "Ripe",
     taste: "Bitter and Sour",
     star1: "star.fill",
@@ -210,5 +211,23 @@ let pomagrante = Fruit (
     star3: "star.fill",
     star4: "star.fill",
     star5: "star.leadinghalf.filled",
-    cardValue: "COMMON"
+    cardValue: "EPIC"
 )
+
+let allFruits = [
+    pear,
+    banana,
+    grapeFruit,
+    apple,
+    grapes,
+    pinapple,
+    cherries,
+    orange,
+    strawberry,
+    blackberry,
+    kiwi,
+    watermellon,
+    peach,
+    lemon,
+    grapeFruit
+]
