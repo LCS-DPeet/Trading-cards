@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Fruit {
+struct Fruit: Identifiable {
+    let id = UUID()
     let image: String
     let foodColour: String
     let bestAteWhen: String
@@ -48,7 +49,7 @@ let banana = Fruit(
 )
 
 let grapeFruit = Fruit(
-    image: "GrapeFruit",
+    image: "Grapefruit",
     foodColour: "Red and Orange",
     bestAteWhen: "Ripe",
     taste: "Sweet and Bitter",
@@ -124,16 +125,16 @@ let orange = Fruit(
 )
 
 let strawberry = Fruit(
-image: "Strawberry",
-foodColour: "Red",
-bestAteWhen: "Ripe",
-taste: "Sweet",
-star1: "star.fill",
-star2: "star.fill",
-star3: "star.fill",
-star4: "star.fill",
-star5: "star.fill",
-cardValue: "LEGENDARY"
+    image: "Strawberry",
+    foodColour: "Red",
+    bestAteWhen: "Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.fill",
+    cardValue: "LEGENDARY"
 )
 
 let blackberry = Fruit (
@@ -163,16 +164,16 @@ let kiwi = Fruit (
 )
 
 let watermellon = Fruit (
-image : "Watermellon",
-foodColour: "Red and Green",
-bestAteWhen: "Ripe",
-taste: "Sweet",
-star1: "star.fill",
-star2: "star.fill",
-star3: "star.fill",
-star4: "star.fill",
-star5: "star.leadinghalf.filled",
-cardValue: "EPIC"
+    image : "Watermellon",
+    foodColour: "Red and Green",
+    bestAteWhen: "Ripe",
+    taste: "Sweet",
+    star1: "star.fill",
+    star2: "star.fill",
+    star3: "star.fill",
+    star4: "star.fill",
+    star5: "star.leadinghalf.filled",
+    cardValue: "EPIC"
 )
 
 let peach = Fruit (
@@ -186,7 +187,7 @@ let peach = Fruit (
     star4: "star.fill",
     star5: "star.fill",
     cardValue: "LEGENDARY"
-    )
+)
 
 let lemon = Fruit (
     image: "Lemon",
@@ -199,7 +200,7 @@ let lemon = Fruit (
     star4: "star.fill",
     star5: "star.leadinghalf.filled",
     cardValue: "COMMON"
-    )
+)
 
 let pomagrante = Fruit (
     image: "Pomegranate",
@@ -215,8 +216,8 @@ let pomagrante = Fruit (
 )
 
 let allFruits = [
-    pear,
     banana,
+    pear,
     grapeFruit,
     apple,
     grapes,
@@ -229,5 +230,5 @@ let allFruits = [
     watermellon,
     peach,
     lemon,
-    grapeFruit
+    pomagrante,
 ]
